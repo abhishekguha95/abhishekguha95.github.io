@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+</head>
+<body>
+    <h1 id="title">Survey</h1>
+    <p id="description">This survey is meant to collect information about our website.</p>
+    <form id="survey-form">
+        <label id="name-label" for ="name" name = "name">Name: </label>
+        <input type="text" id="name" required placeholder="Enter your name">
+        <br><br>
+        <label id="email-label" for ="email" >Email: </label>
+        <input type="email" id="email" name = "email" required placeholder="Enter your email">
+        <br><br>
+        <label id="number-label" for = "number" >Number: </label>
+        <input type="number" name = "number" id="number" min="0" max="9" placeholder="Enter a single digit" style="width: 10em">
+        <br><br>
+        <label for="dropdown">Select gender: </label>
+        <select id="dropdown" name="gender">
+            <option value ="Male">Male</option>
+            <option value ="Female">Female</option>
+            <option value ="Other">Other</option>
+        </select>
+        <br><br>
+        <p>Select highest qualification: </p>
+        <input type="radio" id="10+2" name="qualification" value="10+2">
+        <label for="10+2">10+2</label><br>
+        <input type="radio" id="Graduate" name="qualification" value="Graduate">
+        <label for="Graduate">Graduate</label><br>
+        <input type="radio" id="Post-graduate" name="qualification" value="Post-graduate">
+        <label for="Post-graduate">Post-graduate</label>
+        <br><br>
+        <p>Interested in: </p>
+        <input type="checkbox" name="Machine Learning" id="Machine Learning" value="Machine Learning">
+        <label for="Machine Learning">Machine Learning</label><br>
+        <input type="checkbox" name="Data Engineering" id="MData Engineering" value="Data Engineering">
+        <label for="Data Engineering">Data Engineering</label><br>
+        <input type="checkbox" name="Big data" id="Big data" value="Big data">
+        <label for="Big data">Big data</label><br>
+        <input type="checkbox" name="Quantum Computing" id="Quantum Computing" value="Quantum Computing">
+        <label for="Quantum Computing">Quantum Computing</label>
+        <br><br>
+        <label for = "comment">Additional comments: </label>
+        <textarea id="comment" name="comment" rows="1" cols="7">           
+        </textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
