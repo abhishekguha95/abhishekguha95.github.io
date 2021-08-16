@@ -1,114 +1,131 @@
 body {
-    background-color: lightpink
- }
-  
-  @media screen and (min-width: 400px) {
-    body {
-      background-color: lightblue;
-    }
-  }
+  /* background: linear-gradient(-45deg, #ee8e70, #e66496, #5db6d6, #52dcbb); */
+  margin: 0;
+  color: black;
+}
+
+/* 
   
   @media screen and (min-width: 800px) {
     body {
       background-color: lavender;
     }
+  } */
+
+.header {
+  border: 2px solid black;
+  top: 0;
+  background-color: black;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+}
+
+.header-img {
+  border: 2px solid blue;
+  margin: 10px;
+}
+
+.nav-link {
+  border: 2px solid red;
+  width: max-content;
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+  position: relative;
+  font-weight: bold;
+ 
+  /* right: 30px; */
+}
+
+.nav-link-text{
+  font-family: sans-serif;
+  color: white;
+}
+
+@media screen and (max-width: 400px) {
+  .header {
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
 
-#header{
-    /* border: 2px solid black; */
-    background-color: lightcoral;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between; 
-    position: fixed;
-    width: 96vw;
+  .nav-link {
+    /* display: flex;
+    flex-direction: column; */
+    margin: 10px;
+  }
+  
 }
 
-.top-space{
-height: 100px;
-border: black;
+.rest {
+  padding: 20px;
+  margin-top: 120px;
+  border: 2px solid yellow;
 }
 
-.nav-link{
-    border:2px solid red;
-    border-radius: 8px;
-    background-color : orange;
-    padding: 5px;
+@media screen and (max-width: 400px) {
+  .rest{
+    
+    margin-top: 200px;
+    border: 2px solid red;
+  }
 }
 
-.insub{
+.sub {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
-
-.form-sub{
-    border:2px solid black;
-    padding: 5px;
-    display: grid;
-    grid-template: 50px 50px/ 1fr 1fr 1fr;
-    /* grid-area: 1/2/span 1/span 1; */
-    grid-template-areas: 
-    "a b c"
-    "e d c";
-    background-color:  lightgreen;
-    width: 50vw;
-    grid-gap: 10px;
-    /* height: max-content; */
-   
+.sub2 {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  align-self: center;
+  justify-self: center;
 }
 
 .mail {
-    font-family:  'Lato', sans-serif;
-    /* font-style: italic; */
-    font-size: 1.75em;
-    /* grid-area: a; */
-    align-self: center;
-    justify-self: center;  
-}
-
-#email-label{
-  font-size: 1.75em;
-  font-family:  'Lato', sans-serif;
-  grid-area: a;
-  justify-self: end;
-  align-self: center;
-}
-
-#email{
-  font-family:  'Lato', sans-serif;
-    grid-area: b;
-    font-family:  'Lato', sans-serif;
-    font-size: 1.75em;
-    /* font-style: italic; */
-}
-
-
-#submit{
-    font-family:  'Lato', sans-serif;
-    font-weight: bold;
-    font-size: 1em;
-    border-radius: 8px;
-    background-color: lightgray;
-    grid-area: d;
-    align-self: center;
-    width: 10em;
-    height: 2em;
-    justify-self: center;
-    
-}
-
-#vid{
+  /* border: 2px solid blue; */
   display: flex;
+  gap: 20px;
+  align-self: center;
+  justify-self: center;
+}
+
+.submit {
+  /* border: 2px solid blue; */
+  display: flex;
+
+  align-self: center;
+  justify-self: center;
+}
+
+.text-info {
+  color: #000 !important;
+}
+
+#vid {
+  /* display: flex; */
   /* border: 1px solid black; */
   justify-content: center;
 }
 
-.products{
+.products {
   display: flex;
   justify-content: center;
 }
 
-.prodsec{
+.prodsec {
   display: flex;
   border: 2px solid blue;
   width: 70vw;
@@ -119,7 +136,7 @@ border: black;
   justify-self: center;
 }
 
-.prod1{
+.prod1 {
   display: flex;
   border: 1px solid black;
   height: 300px;
@@ -127,7 +144,7 @@ border: black;
   align-items: center;
   justify-content: center;
 }
-.prod2{
+.prod2 {
   display: flex;
   border: 1px solid black;
   height: 300px;
@@ -135,10 +152,10 @@ border: black;
   align-items: center;
   justify-content: center;
 }
-.prod3{
+.prod3 {
   display: flex;
   border: 1px solid black;
-  height:300px;
+  height: 300px;
   width: 300px;
   align-items: center;
   justify-content: center;

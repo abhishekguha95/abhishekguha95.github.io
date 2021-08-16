@@ -1,74 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="stylesheet.css">    
-    <title>Document</title>
+
+    <!-- linking bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- linking CSS -->
+    <link rel="stylesheet" href="stylesheet.css">
+    <title>Product X</title>
 </head>
+
 <body>
-    <header id = "header">
-            <img id="header-img" src="https://previews.123rf.com/images/piikcoro/piikcoro1705/piikcoro170500617/77602633-action-camera-logo-camera-for-active-sports.jpg" style="width: 7em; height: 5em;">
-            <nav id="nav-bar">
-                <a class='nav-link' href="#text-info">text-info</a>
-                <a class='nav-link' href="#vid">video</a>
-                <a class='nav-link' href="#products">products</a>
-            </nav>
-    </header>
-    <br><br> 
-    <div class="top-space">
+    <div class="header">
+
+        <div class="header-img">
+            <img src="https://previews.123rf.com/images/piikcoro/piikcoro1705/piikcoro170500617/77602633-action-camera-logo-camera-for-active-sports.jpg"
+                style="width: 7em; height: 5em;">
+        </div>
+
+        <div class="nav-link">
+            <a class="nav-link-text" href="#">CAMERA</a>
+            <a class="nav-link-text" href="#">ACCS</a>
+            <a class="nav-link-text" href="#">GEAR</a>
+            <a class="nav-link-text" href="#">APPS</a>
+
+        </div>
 
     </div>
-    <div class="sub" id="form">
-        <section class="insub">
+
+    <div class="rest">
+
+        <div class="div1">
             <form class="form-sub" action="https://www.freecodecamp.com/email-submit" method="POST">
-                <!-- <section class="mail"> -->
-                    <label id="email-label" for ="email" >Email: </label>
-                    <input type="email" id="email" name = "email" required placeholder="Enter your email">
-                <!-- </section> -->
-                <br><br>
-                <input type="submit" id = "submit" value="Submit">
+                <div class="sub">
+                    <div class="sub2">
+                        <div class="mail">
+                            <!-- <label id="email-label" for="email">Email: </label> -->
+                            <div class="mail-label">
+                                <p>Email: </p>
+                            </div>
+                            <div class="mail-input">
+                                <input type="email" id="email" name="email" required placeholder="Enter your email">
+                            </div>
+                        </div>
+
+                        <br>
+                        <div class="submit">
+                            <input class="btn btn-success" type="submit" value="Submit">
+                        </div>
+                    </div>
+                </div>
             </form>
+        </div>
+
+        <br><br>
+        <div class="text-info" id="text-info">
+            <h2>Mods</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+            <br><br>
+            <h2>Bags</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+            <br><br>
+            <h2>Gear</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum.</p>
+            <br><br> <br><br> <br><br>
+        </div>
+
+        <section class="vid" id="vid">
+            <section class="vid2">
+                <h2>Video</h2>
+                <!-- <video id="video" src="https://video.link/w/KrI4c" id="video" controls height="300px"
+                    width="500px"></video> -->
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/vlDzYIIOYmM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </section>
         </section>
+
+        <br><br> <br><br> <br><br> <br><br>
+        <section class="products" id="products">
+            <section class="prodsec">
+                <section class="prod1">
+                    <h1>prod1</h1>
+                </section>
+                <section class="prod2">
+                    <h1>prod2</h1>
+                </section>
+                <section class="prod3">
+                    <h1>prod3</h1>
+                </section>
+            </section>
+            <br><br> <br><br>
+        </section>
+
     </div>
-    <br><br> <br><br> <br><br>  
-
-    <section class="text-info" id="text-info">
-        <h2>Mods</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <br><br>
-        <h2>Bags</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <br><br>
-        <h2>Gear</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <br><br> <br><br> <br><br>
-    </section>
-
-    <section class="vid" id="vid">
-        <section class="vid2">
-            <h2>Video</h2>
-            <video src="https://video.link/w/KrI4c" id="video" controls height="300px" width="500px"></video>
-            <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Y7RB_uEKs18" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>     -->
-        </section>
-       </section>
-
-    <br><br> <br><br> <br><br> <br><br> 
-    <section class="products" id="products">
-        <section class="prodsec">
-            <section class="prod1">
-                <h1>prod1</h1>
-            </section> 
-            <section class="prod2">
-                <h1>prod2</h1>
-            </section> 
-            <section class="prod3">
-                <h1>prod3</h1>
-            </section>  
-        </section>
-        <br><br> <br><br>    
-    </section>
 </body>
-</html>
 
+</html>
