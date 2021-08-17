@@ -10,6 +10,14 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
+    <!-- linking swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+     <!-- linking google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+
     <!-- linking CSS -->
     <link rel="stylesheet" href="stylesheet.css">
     <title>Product X</title>
@@ -20,7 +28,7 @@
 
         <div class="header-img">
             <img src="https://previews.123rf.com/images/piikcoro/piikcoro1705/piikcoro170500617/77602633-action-camera-logo-camera-for-active-sports.jpg"
-                style="width: 7em; height: 5em;">
+                style=" height: 3em;">
         </div>
 
         <div class="nav-link">
@@ -51,7 +59,7 @@
 
                         <br>
                         <div class="submit">
-                            <input class="btn btn-success" type="submit" value="Submit">
+                            <input class="btn btn-warning" type="submit" value="Submit">
                         </div>
                     </div>
                 </div>
@@ -83,19 +91,20 @@
             <br><br> <br><br> <br><br>
         </div>
 
-        <section class="vid" id="vid">
-            <section class="vid2">
-                <h2>Video</h2>
+        <div class="vid" id="vid">
+            <h2>Video</h2>
+            <div class="iframe-container">
                 <!-- <video id="video" src="https://video.link/w/KrI4c" id="video" controls height="300px"
                     width="500px"></video> -->
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/vlDzYIIOYmM"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
-            </section>
-        </section>
+            </div>
+        </div>
 
-        <br><br> <br><br> <br><br> <br><br>
+        <br><br><br><br>
+        <!-- <br><br> <br><br>
         <section class="products" id="products">
             <section class="prodsec">
                 <section class="prod1">
@@ -109,8 +118,53 @@
                 </section>
             </section>
             <br><br> <br><br>
-        </section>
+        </section> -->
 
+
+        <!-- Swiper -->
+        <div class="swiper-container mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./pic1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./pic2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./pic3.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./pic4.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./pic5.jpg" />
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                effect: "coverflow",
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: "auto",
+                coverflowEffect: {
+                    rotate: 50,
+                    stretch: 0,
+                    depth: 100,
+                    modifier: 1,
+                    slideShadows: true,
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                },
+            });
+        </script>
     </div>
 </body>
 
